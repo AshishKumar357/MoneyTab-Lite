@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MoneyTabLite</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="clear">Clear</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="enter_e_mail">Enter E-Mail</string>
+    <string name="textview">TextView</string>
+    <string name="username">UserName</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="transaction">DO A TRANSACTION</string>
+    <string name="view">View </string>
+    <string name="already_have_an_account">Already Have An account ??</string>
+
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="you_got_some_money_credit">You got some Money (Credit)???</string>
+    <string name="name">name</string>
+    <string name="name_of_the_person_you_had_a_transaction_with">Name of the person you had a transaction with</string>
+    <string name="enter_amount">Enter Amount :</string>
+    <string name="debit">Debit (-)</string>
+    <string name="credit">Credit(+)</string>
+    <string name="your_pending_transactions">Your Pending Transactions</string>
+    <string name="line_1">line 1</string>
+    <string name="line_2">line 2</string>
+    <string name="nameinp">Name:</string>
+    <string name="insert">insert</string>
+    <string name="save">save</string>
+    <string name="see_all_transactions">See All Transactions</string>
+    <string name="about_us">About Us</string>
+    <string name="these_are_your_pending_transactions">These Are Your Pending Transactions :</string>
+</resources>

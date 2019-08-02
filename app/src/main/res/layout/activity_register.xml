@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/inpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inpPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/inpPhno"
+        app:layout_constraintTop_toBottomOf="@+id/inpPhno" />
+
+    <EditText
+        android:id="@+id/inpPhno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/impEMail"
+        app:layout_constraintTop_toBottomOf="@+id/impEMail" />
+
+    <EditText
+        android:id="@+id/impEMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/enter_e_mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/inpName"
+        app:layout_constraintTop_toBottomOf="@+id/inpName" />
+
+    <Button
+        android:id="@+id/Clearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/clear"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/inpPwd"
+        app:layout_constraintTop_toBottomOf="@+id/inpPwd" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inpPwd"
+        app:layout_constraintTop_toTopOf="@+id/Clearbtn" />
+</android.support.constraint.ConstraintLayout>
