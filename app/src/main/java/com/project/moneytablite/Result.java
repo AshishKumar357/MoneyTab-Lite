@@ -14,10 +14,33 @@ package com.project.moneytablite;
          total[0]=0;
      }
 
-     static void addMember(String nme, int money){
-        int flag = 0;
+     static StringBuilder getNames() {
+         StringBuilder ab = new StringBuilder();
 
-       for(int i=0; i<count; i++){
+         for (int y = 0; y < count; y++) {
+
+             ab.append(names[y]);
+             ab.append('\n');
+
+         }
+         return ab;
+     }
+
+     static StringBuilder getTotal() {
+         StringBuilder cb = new StringBuilder();
+
+         for (int y = 0; y < count; y++) {
+             cb.append(total[y]);
+             cb.append('\n');
+
+         }
+         return cb;
+     }
+
+     static void addMember(String nme, int money){
+         int flag = 0;
+
+         for (int i = 0; i < count; i++) {
            if(names[i].equals(nme))
            {
                total[i]+= money;

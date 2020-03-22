@@ -26,47 +26,61 @@
             tools:layout_editor_absoluteY="4dp" />
 
     </android.support.v7.widget.Toolbar>
+
     <Button
         android:id="@+id/tbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="#FD3636"
         android:text="@string/transaction"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
     <Button
         android:id="@+id/showbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#4398BE"
         android:text="@string/see_all_transactions"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbtn" />
+        app:layout_constraintStart_toEndOf="@+id/tbtn"
+        app:layout_constraintTop_toTopOf="@+id/tbtn" />
 
     <Button
         android:id="@+id/viewbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#F0DC2E"
         android:text="@string/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/showbtn" />
+        app:layout_constraintStart_toStartOf="@+id/tbtn"
+        app:layout_constraintTop_toBottomOf="@+id/tbtn" />
 
     <Button
         android:id="@+id/Aboutbtn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#31EB39"
         android:text="@string/about_us"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewbtn"
+        app:layout_constraintTop_toTopOf="@+id/viewbtn" />
+
+    <Button
+        android:id="@+id/visitbtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#856CB1"
+        android:text="@string/visit_us"
+        app:layout_constraintStart_toStartOf="@+id/viewbtn"
         app:layout_constraintTop_toBottomOf="@+id/viewbtn" />
+
+    <Button
+        android:id="@+id/helpbtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#EE719B"
+        android:text="@string/help_faq"
+        app:layout_constraintStart_toEndOf="@+id/visitbtn"
+        app:layout_constraintTop_toTopOf="@+id/visitbtn" />
 
 </android.support.constraint.ConstraintLayout>

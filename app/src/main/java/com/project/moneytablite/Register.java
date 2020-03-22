@@ -2,12 +2,13 @@ package com.project.moneytablite;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,6 +16,9 @@ public class Register extends AppCompatActivity {
 
     Button clearbtn,submitbtn;
     EditText inpName,impEMail,inpPhno,inpPwd;
+
+    private static final String USERNAME_PATTERN = "^[a-z0-9_-]{3,15}$";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +50,10 @@ public class Register extends AppCompatActivity {
                 if ("".equals(newUser)){
                     Toast.makeText(Register.this, "UserName Field is Compulsory ", Toast.LENGTH_SHORT).show();
                 }
+//                }else if (!validateUserName(newUser)){
+//                    Toast.makeText(Register.this, "UserName Field is badly formatted ", Toast.LENGTH_SHORT).show();
+//                    inpName.setText("");
+//                }
                 else if ("".equals(newmail)){
                     Toast.makeText(Register.this, "Email Field is Compulsory ", Toast.LENGTH_SHORT).show();
                 }
@@ -109,4 +117,11 @@ public class Register extends AppCompatActivity {
         }
         return false;
     }
+//    public boolean validateUserName(final String username){
+//        Pattern pattern = Pattern.compile(USERNAME_PATTERN);
+//        Matcher matcher = pattern.matcher(username);
+//        return matcher.matches();
+//
+//    }
+
 }

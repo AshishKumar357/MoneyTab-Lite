@@ -7,14 +7,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -42,6 +40,7 @@ public class QueryActivity extends AppCompatActivity {
         logBtn = findViewById(R.id.lgbtn);
         toolbar= findViewById(R.id.toolbar3);
         line1 = findViewById(R.id.edittext_line_1);
+
         line2 = findViewById(R.id.edittext_line_2);
 
         SharedPreferences sp=getSharedPreferences("MYPREF", MODE_PRIVATE);
@@ -103,7 +102,7 @@ public class QueryActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
 
-         mAdapter = new ExampleAdapter(showList = new ArrayList<ExampleItem>());
+         mAdapter = new ExampleAdapter(showList = new ArrayList<>());
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);

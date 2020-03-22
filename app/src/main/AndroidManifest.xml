@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".HelpUs" />
+        <activity android:name=".visitUs" />
+        <activity android:name=".TaskSwitch" />
         <activity android:name=".ViewPassbook" />
         <activity android:name=".About" />
         <activity android:name=".Register" />

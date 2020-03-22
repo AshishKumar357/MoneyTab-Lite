@@ -1,19 +1,15 @@
 package com.project.moneytablite;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class ViewPassbook extends AppCompatActivity {
 
 
-    TextView restxt;
+    TextView Nametxt, Atxt;
 
     @Override
     protected void onResume() {
@@ -26,7 +22,8 @@ public class ViewPassbook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_passbook);
 
-        restxt=findViewById(R.id.restxt);
+        Nametxt = findViewById(R.id.restxt);
+        Atxt = findViewById(R.id.Moneytxt);
 
         if(Result.getCount()>0){
             Result.check();
@@ -37,8 +34,8 @@ public class ViewPassbook extends AppCompatActivity {
             Intent intent = new Intent(this, Home.class);
             startActivity(intent);
         }
-        restxt.setText(Result.returnString());
-
+        Nametxt.setText(Result.getNames());
+        Atxt.setText(Result.getTotal());
 
 
     }

@@ -33,4 +33,10 @@
     <string name="see_all_transactions">See All Transactions</string>
     <string name="about_us">About Us</string>
     <string name="these_are_your_pending_transactions">These Are Your Pending Transactions :</string>
+    <string name="names">Names:</string>
+    <string name="amount">Amount:</string>
+    <string name="visit_us">Visit Us:</string>
+    <string name="help_faq">Help/FAQ</string>
+    <string name="helpbox_txt">we Can\'t Help you right now sorry</string>
+    <string name="this_app_was_created_by_ashish_kumr">This App was created by ASHISH KUMR</string>
 </resources>

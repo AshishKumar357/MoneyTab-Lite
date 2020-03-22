@@ -2,8 +2,8 @@ package com.project.moneytablite;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +13,7 @@ public class Home extends AppCompatActivity {
 
     TextView textView;
     Toolbar toolbar;
-    Button logBtn,tbtn, showbtn,viewbtn,aboutbtn;
+    Button logBtn, tbtn, showbtn, viewbtn, aboutbtn, visitbtn, helpbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,8 @@ public class Home extends AppCompatActivity {
         showbtn= findViewById(R.id.showbtn);
         viewbtn= findViewById(R.id.viewbtn);
         aboutbtn= findViewById(R.id.Aboutbtn);
+        visitbtn = findViewById(R.id.visitbtn);
+        helpbtn = findViewById(R.id.helpbtn);
 
         SharedPreferences sp=getSharedPreferences("MYPREF", MODE_PRIVATE);
         String display= sp.getString("display","");
@@ -68,6 +70,22 @@ public class Home extends AppCompatActivity {
                 Intent intent=new Intent(Home.this,MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+            }
+        });
+
+        visitbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, visitUs.class);
+                startActivity(intent);
+            }
+        });
+
+        helpbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, HelpUs.class);
                 startActivity(intent);
             }
         });
